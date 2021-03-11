@@ -1,0 +1,9 @@
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\bin\Debug\netstandard2.0\DataAccessLibrary.deps.json
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\bin\Debug\netstandard2.0\DataAccessLibrary.dll
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\bin\Debug\netstandard2.0\DataAccessLibrary.pdb
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.csprojAssemblyReference.cache
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.AssemblyInfo.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.dll
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.pdb

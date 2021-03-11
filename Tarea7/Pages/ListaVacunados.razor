@@ -1,0 +1,59 @@
+﻿@page "/ListaVacunados"
+@using System.Data;
+@using System.Data.SqlClient;
+@using Tarea7.Interfaces;
+@inject IPersonaService PersonasSercive
+@using DataAccessLibrary;
+
+<h2>Personas Vacunadas</h2>
+@if(personas == null)
+{
+    <p>Cargando...</p>
+
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cedula</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Signo Zodiacal</th>
+                <th>ID_Provincia</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var persona in personas)
+            {
+            <tr>
+                <td>@persona.ID</td>
+                <td>@persona.Cedula</td>
+                <td>@persona.Nombre</td>
+                <td>@persona.Apellido</td>
+                <td>@persona.Fecha_Nacimiento</td>
+                <td>@persona.Signo_Zodiacal</td>
+                <td>@persona.ID_Provincia</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    private IEnumerable<Personas> personas;
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            personas = await PersonasSercive.GetAllPersonas();
+        }
+        catch(Exception e)
+        {
+
+        }
+    }
+}

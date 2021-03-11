@@ -1,0 +1,94 @@
+﻿@page "/Insertar"
+@using Tarea7.Data;
+@using System.Data.SqlClient;
+@using System.Net;
+@using Newtonsoft.Json;
+
+<h2>Registrar Persona Vacunada</h2>
+
+<input type="text" @bind-value="@Cedula" placeholder="Cedula" />
+<br />
+<br />
+<input type="text" @bind-value="@Nombre" placeholder="Nombre" />
+<br />
+<br />
+<input type="text" @bind-value="@Apellido" placeholder="Apellido" />
+<br />
+<br />
+<input type="text" @bind-value="@FechaNacimiento" placeholder="Fecha de Nacimiento" />
+<br />
+<br />
+<input type="text" @bind-value="@SignoZodiacal" placeholder="Signo Zodiacal" />
+<br />
+<br />
+<input type="text" @bind-value="@ID_Provincia" placeholder="ID de Provincia" />
+<br />
+<br />
+<button @onclick="ValidarCedula" class="btn btn-info btn-lg">Validar Cedula</button>
+<br />
+<br />
+<button @onclick="RegistrarVacunado" class="btn btn-success btn-lg">Registrar Vacunado</button>
+<p>
+    <center>
+        <h4>@exito</h4>
+        <h4>@error</h4>
+    </center>
+    
+</p>
+
+@code {
+    string Nombre, Apellido, Cedula, SignoZodiacal;
+    string exito;
+    DateTime FechaNacimiento;
+    string error;
+    int ID_Provincia;
+    SqlConnection conexion = new SqlConnection("server= localhost\\SQLEXPRESS; database = Tarea7; Integrated security = True");
+
+    void RegistrarVacunado()
+    {
+        try
+        {
+            string query = "INSERT into Personas(Cedula, Nombre, Apellido, Fecha_Nacimiento, Signo_Zodiacal, ID_Provincia) values (@Cedula, @Nombre, @Apellido, @Fecha_Nacimiento, @Signo_Zodiacal, @ID_Provincia)";
+            conexion.Open();
+            SqlCommand comando = new SqlCommand(query, conexion);
+            comando.Parameters.AddWithValue("@Cedula", Cedula);
+            comando.Parameters.AddWithValue("@Nombre", Nombre);
+            comando.Parameters.AddWithValue("@Apellido", Apellido);
+            comando.Parameters.AddWithValue("@Fecha_Nacimiento", FechaNacimiento);
+            comando.Parameters.AddWithValue("@Signo_Zodiacal", SignoZodiacal);
+            comando.Parameters.AddWithValue("@ID_Provincia", ID_Provincia);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            exito = "Persona Registrada con Exito!!";
+        }
+        catch (Exception e)
+        {
+            error = e.Message;
+        }
+
+
+    }
+    void ValidarCedula()
+    {
+        try
+        {
+            WebClient webcli = new WebClient();
+            var api = "https://api.adamix.net/apec/cedula/" + Cedula;
+            var datos = webcli.DownloadString(api);
+
+            var resultados = JsonConvert.DeserializeObject<Root>(datos);
+            if (Cedula == resultados.Cedula)
+            {
+                Nombre = resultados.Nombres;
+                Apellido = resultados.Apellido1 + " " + resultados.Apellido2;
+                FechaNacimiento = Convert.ToDateTime(resultados.FechaNacimiento);
+
+            }
+
+        }
+        catch (Exception e)
+        {
+            error = e.Message;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\bin\Debug\netstandard2.0\DataAccessLibrary.dll
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\obj\Debug\netstandard2.0\Data.Dapper.csprojAssemblyReference.cache
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\obj\Debug\netstandard2.0\Data.Dapper.AssemblyInfoInputs.cache
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\obj\Debug\netstandard2.0\Data.Dapper.AssemblyInfo.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\bin\Debug\netstandard2.0\Data.Dapper.deps.json
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\bin\Debug\netstandard2.0\Data.Dapper.dll
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\bin\Debug\netstandard2.0\Data.Dapper.pdb
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\bin\Debug\netstandard2.0\DataAccessLibrary.pdb
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\obj\Debug\netstandard2.0\Data.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\obj\Debug\netstandard2.0\Data.Dapper.csproj.CopyComplete
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\obj\Debug\netstandard2.0\Data.Dapper.dll
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Data.Dapper\obj\Debug\netstandard2.0\Data.Dapper.pdb
