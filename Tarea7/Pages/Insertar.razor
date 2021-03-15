@@ -61,7 +61,7 @@
     {
         try
         {
-            string query = "INSERT into Personas(Cedula, Nombre, Apellido, Fecha_Nacimiento, Signo_Zodiacal, Vacuna_Recibida, Provincia, Primera_Dosis) values (@Cedula, @Nombre, @Apellido, @Fecha_Nacimiento, @Signo_Zodiacal, @Vacuna_Recibida, @Provincia, @Primera_Dosis)";
+            string query = "INSERT INTO Personas(Cedula, Nombre, Apellido, Fecha_Nacimiento, Signo_Zodiacal, Vacuna_Recibida, Provincia, Primera_Dosis) values (@Cedula, @Nombre, @Apellido, @Fecha_Nacimiento, @Signo_Zodiacal, @Vacuna_Recibida, @Provincia, @Primera_Dosis)";
             conexion.Open();
             SqlCommand comando = new SqlCommand(query, conexion);
             comando.Parameters.AddWithValue("@Cedula", Cedula);
@@ -79,7 +79,7 @@
 
 
             conexion.Close();
-            exito = "Persona Registrada con Exito!!";
+            exito = "¡¡Persona Registrada con Exito!!";
         }
         catch (Exception e)
         {

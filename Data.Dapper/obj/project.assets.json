@@ -1118,19 +1118,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Willy Acevedo\\.nuget\\packages\\": {}
+    "C:\\Users\\abelb\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Willy Acevedo\\Desktop\\Programacion_3\\Tarea7\\Data.Dapper\\Data.Dapper.csproj",
+      "projectUniqueName": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\Data.Dapper\\Data.Dapper.csproj",
       "projectName": "Data.Dapper",
-      "projectPath": "C:\\Users\\Willy Acevedo\\Desktop\\Programacion_3\\Tarea7\\Data.Dapper\\Data.Dapper.csproj",
-      "packagesPath": "C:\\Users\\Willy Acevedo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Willy Acevedo\\Desktop\\Programacion_3\\Tarea7\\Data.Dapper\\obj\\",
+      "projectPath": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\Data.Dapper\\Data.Dapper.csproj",
+      "packagesPath": "C:\\Users\\abelb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\Data.Dapper\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Willy Acevedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\abelb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1144,8 +1148,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\Willy Acevedo\\Desktop\\Programacion_3\\Tarea7\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-              "projectPath": "C:\\Users\\Willy Acevedo\\Desktop\\Programacion_3\\Tarea7\\DataAccessLibrary\\DataAccessLibrary.csproj"
+            "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+              "projectPath": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\DataAccessLibrary\\DataAccessLibrary.csproj"
             }
           }
         }

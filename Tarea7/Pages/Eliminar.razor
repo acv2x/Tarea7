@@ -20,13 +20,13 @@
     {
         try
         {
-            string query = "DELETE FROM Personas where Cedula = @cedula";
+            string query = "DELETE FROM Personas WHERE Cedula = @cedula";
             conexion.Open();
             SqlCommand comando = new SqlCommand(query, conexion);
             comando.Parameters.AddWithValue("@cedula", cedula);
             comando.ExecuteNonQuery();
             conexion.Close();
-            exito = "PERSONA ELIMINADA CON EXITO";
+            exito = "¡PERSONA ELIMINADA CON EXITO!";
         }
         catch(Exception e)
         {
