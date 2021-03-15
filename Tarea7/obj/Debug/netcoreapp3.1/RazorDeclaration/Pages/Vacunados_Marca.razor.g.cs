@@ -76,35 +76,35 @@ using Tarea7.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 2 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Marca.razor"
 using System.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 3 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Marca.razor"
 using System.Data.SqlClient;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 4 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Marca.razor"
 using Tarea7.Interfaces;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 6 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Marca.razor"
 using DataAccessLibrary;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/ListaVacunados")]
-    public partial class ListaVacunados : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Vacunados_Marca")]
+    public partial class Vacunados_Marca : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -112,17 +112,17 @@ using DataAccessLibrary;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 66 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Marca.razor"
        
-    string error;
+    string error, marca;
     private IEnumerable<Personas> personas;
-    protected override async Task OnInitializedAsync()
+    protected async Task Listar()
     {
         try
         {
-            personas = await PersonasSercive.GetAllPersonas();
+            personas = await PersonasSercive.GetPersonasMarca(marca);
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             error = e.Message;
         }

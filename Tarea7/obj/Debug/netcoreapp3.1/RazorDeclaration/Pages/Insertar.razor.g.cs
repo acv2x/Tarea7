@@ -112,20 +112,21 @@ using Newtonsoft.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Insertar.razor"
+#line 51 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Insertar.razor"
        
-    string Nombre, Apellido, Cedula, SignoZodiacal;
-    string exito;
+    string Nombre, Apellido, Cedula, SignoZodiacal, Vacuna_Recibida;
+    string exito, Primera_Dosis, Segunda_Dosis;
     DateTime FechaNacimiento;
     string error;
-    int ID_Provincia;
+
+    string provincia;
     SqlConnection conexion = new SqlConnection("server= localhost\\SQLEXPRESS; database = Tarea7; Integrated security = True");
 
     void RegistrarVacunado()
     {
         try
         {
-            string query = "INSERT into Personas(Cedula, Nombre, Apellido, Fecha_Nacimiento, Signo_Zodiacal, ID_Provincia) values (@Cedula, @Nombre, @Apellido, @Fecha_Nacimiento, @Signo_Zodiacal, @ID_Provincia)";
+            string query = "INSERT into Personas(Cedula, Nombre, Apellido, Fecha_Nacimiento, Signo_Zodiacal, Vacuna_Recibida, Provincia, Primera_Dosis) values (@Cedula, @Nombre, @Apellido, @Fecha_Nacimiento, @Signo_Zodiacal, @Vacuna_Recibida, @Provincia, @Primera_Dosis)";
             conexion.Open();
             SqlCommand comando = new SqlCommand(query, conexion);
             comando.Parameters.AddWithValue("@Cedula", Cedula);
@@ -133,8 +134,15 @@ using Newtonsoft.Json;
             comando.Parameters.AddWithValue("@Apellido", Apellido);
             comando.Parameters.AddWithValue("@Fecha_Nacimiento", FechaNacimiento);
             comando.Parameters.AddWithValue("@Signo_Zodiacal", SignoZodiacal);
-            comando.Parameters.AddWithValue("@ID_Provincia", ID_Provincia);
+            comando.Parameters.AddWithValue("@Vacuna_Recibida", Vacuna_Recibida);
+            comando.Parameters.AddWithValue("@Provincia", provincia);
+            comando.Parameters.AddWithValue("@Primera_Dosis", Primera_Dosis);
+
             comando.ExecuteNonQuery();
+
+
+
+
             conexion.Close();
             exito = "Persona Registrada con Exito!!";
         }
@@ -145,6 +153,7 @@ using Newtonsoft.Json;
 
 
     }
+    
     void ValidarCedula()
     {
         try

@@ -22,7 +22,10 @@ else
                 <th>Apellido</th>
                 <th>Fecha de Nacimiento</th>
                 <th>Signo Zodiacal</th>
-                <th>ID_Provincia</th>
+                <th>Vacuna Recibida</th>
+                <th>Provincia</th>
+                <th>Primera Dosis</th>
+                <th>Segunda Dosis</th>
             </tr>
         </thead>
         <tbody>
@@ -35,15 +38,21 @@ else
                 <td>@persona.Apellido</td>
                 <td>@persona.Fecha_Nacimiento</td>
                 <td>@persona.Signo_Zodiacal</td>
-                <td>@persona.ID_Provincia</td>
+                <td>@persona.Vacuna_Recibida</td>
+                <td>@persona.Provincia</td>
+                <td>@persona.Primera_Dosis</td>
+                <td>@persona.Segunda_Dosis</td>
             </tr>
             }
         </tbody>
     </table>
+    <p>
+        <h4>@error</h4>
+    </p>
 }
 
 @code {
-
+    string error;
     private IEnumerable<Personas> personas;
     protected override async Task OnInitializedAsync()
     {
@@ -53,7 +62,7 @@ else
         }
         catch(Exception e)
         {
-
+            error = e.Message;
         }
     }
 }

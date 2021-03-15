@@ -22,5 +22,20 @@ namespace Tarea7.Servicios
         {
             return _personaRepositorio.GetAllPersonas();
         }
+
+        public Task<IEnumerable<Personas>> GetPersonasMarca(string marca)
+        {
+            return _personaRepositorio.GetPersonasMarca(marca);
+        }
+
+        public Task<IEnumerable<Personas>> GetPersonasProvincias(string provincia)
+        {
+            return _personaRepositorio.GetPersonasProvincias(provincia);
+        }
+
+        public Task<IEnumerable<Personas>> GetPersonasSigno(string signo)
+        {
+            return _personaRepositorio.GetPersonasSigno(signo);
+        }
     }
 }

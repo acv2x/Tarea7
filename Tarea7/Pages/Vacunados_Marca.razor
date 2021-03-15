@@ -1,15 +1,16 @@
-﻿@page "/Vacunados_Provincias"
+﻿@page "/Vacunados_Marca"
 @using System.Data;
 @using System.Data.SqlClient;
 @using Tarea7.Interfaces;
 @inject IPersonaService PersonasSercive
 @using DataAccessLibrary;
 
-<h2>Lista de Vacunados por Provincia</h2>
+<h2>Lista de Vacunados por Marca de Vacuna</h2>
+
 <p>
-    Inserte el nombre de la provincia de la cual desea visualizar los vacunados
+    Inserte el Signo Zodiacal de la personas las cuales desea vizualisar
 </p>
-<input type="text" @bind-value="@provincia" placeholder="Provincia" />
+<input type="text" @bind-value="@marca" placeholder="Signo Zodiacal" />
 <br />
 <br />
 <button @onclick="Listar" class="btn btn-success btn-lg">BUSCAR</button>
@@ -61,14 +62,15 @@ else
         </h4>
     </p>
 }
+
 @code {
-    string provincia, error;
+    string error, marca;
     private IEnumerable<Personas> personas;
     protected async Task Listar()
     {
         try
         {
-            personas = await PersonasSercive.GetPersonasProvincias(provincia);
+            personas = await PersonasSercive.GetPersonasMarca(marca);
         }
         catch (Exception e)
         {

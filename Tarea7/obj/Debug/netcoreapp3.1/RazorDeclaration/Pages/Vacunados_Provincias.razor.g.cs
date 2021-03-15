@@ -75,6 +75,35 @@ using Tarea7.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Provincias.razor"
+using System.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Provincias.razor"
+using System.Data.SqlClient;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Provincias.razor"
+using Tarea7.Interfaces;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Provincias.razor"
+using DataAccessLibrary;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Vacunados_Provincias")]
     public partial class Vacunados_Provincias : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -82,6 +111,27 @@ using Tarea7.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 64 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Vacunados_Provincias.razor"
+       
+    string provincia, error;
+    private IEnumerable<Personas> personas;
+    protected async Task Listar()
+    {
+        try
+        {
+            personas = await PersonasSercive.GetPersonasProvincias(provincia);
+        }
+        catch (Exception e)
+        {
+            error = e.Message;
+        }
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPersonaService PersonasSercive { get; set; }
     }
 }
 #pragma warning restore 1591

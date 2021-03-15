@@ -76,35 +76,35 @@ using Tarea7.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
-using System.Data;
+#line 2 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\SegundaDosis.razor"
+using Tarea7.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 3 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\SegundaDosis.razor"
 using System.Data.SqlClient;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
-using Tarea7.Interfaces;
+#line 4 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\SegundaDosis.razor"
+using System.Net;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
-using DataAccessLibrary;
+#line 5 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\SegundaDosis.razor"
+using Newtonsoft.Json;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/ListaVacunados")]
-    public partial class ListaVacunados : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/SegundaDosis")]
+    public partial class SegundaDosis : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -112,26 +112,64 @@ using DataAccessLibrary;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 47 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\SegundaDosis.razor"
        
+    string Nombre, Apellido, Cedula, SignoZodiacal, Vacuna_Recibida;
+    string exito, Primera_Dosis, Segunda_Dosis, FechaNacimiento, Provincia;
     string error;
-    private IEnumerable<Personas> personas;
-    protected override async Task OnInitializedAsync()
+    int ID;
+    SqlConnection conexion = new SqlConnection("server= localhost\\SQLEXPRESS; database = Tarea7; Integrated security = True");
+    void registrar()
     {
         try
         {
-            personas = await PersonasSercive.GetAllPersonas();
+            string query = "UPDATE Personas set Segunda_Dosis = @Segunda_Dosis";
+            conexion.Open();
+            SqlCommand comando = new SqlCommand(query, conexion);
+            comando.Parameters.AddWithValue("@Segunda_Dosis", Segunda_Dosis);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            exito = "Segunda Dosis Registrada con Exito";
         }
         catch(Exception e)
         {
             error = e.Message;
         }
+
+    }
+    void buscar()
+    {
+        try
+        {
+            string query = $"SELECT * FROM Personas WHERE Cedula = '{Cedula}'";
+            conexion.Open();
+            SqlCommand comando = new SqlCommand(query, conexion);
+            SqlDataReader lector = comando.ExecuteReader();
+            while (lector.Read())
+            {
+                ID = Convert.ToInt32(lector[0]);
+                Nombre = Convert.ToString(lector[2]);
+                Apellido = Convert.ToString(lector[3]);
+                FechaNacimiento = Convert.ToString(lector[4]);
+                SignoZodiacal = Convert.ToString(lector[5]);
+                Vacuna_Recibida = Convert.ToString(lector[6]);
+                Provincia = Convert.ToString(lector[7]);
+                Primera_Dosis = Convert.ToString(lector[8]);
+                Segunda_Dosis = Convert.ToString(lector[9]);
+
+            }
+            conexion.Close();
+        }
+        catch(Exception e)
+        {
+            error = e.Message;
+        }
+
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPersonaService PersonasSercive { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -1,0 +1,100 @@
+﻿@page "/SegundaDosis"
+@using Tarea7.Data;
+@using System.Data.SqlClient;
+@using System.Net;
+@using Newtonsoft.Json;
+<h2>Segunda Dosis</h2>
+<p>
+    Digite la cedula para mostrar los datos del vacunado, y registrar la segunda dosis
+</p>
+<input type="text" @bind-value="@Cedula" placeholder="Cedula" />
+<br />
+<br />
+<input type="text" @bind-value="@Nombre" placeholder="Nombre" />
+<br />
+<br />
+<input type="text" @bind-value="@Apellido" placeholder="Apellido" />
+<br />
+<br />
+<input type="text" @bind-value="@FechaNacimiento" placeholder="Fecha de Nacimiento" />
+<br />
+<br />
+<input type="text" @bind-value="@SignoZodiacal" placeholder="Signo Zodiacal" />
+<br />
+<br />
+<input type="text" @bind-value="@Vacuna_Recibida" placeholder="Vacuna Recibida" />
+<br />
+<br />
+<input type="text" @bind-value="@Provincia" placeholder="Provincia" />
+<br />
+<br />
+<input type="text" @bind-value="@Primera_Dosis" placeholder="Primera Dosis" />
+<br />
+<br />
+<input type="text" @bind-value="@Segunda_Dosis" placeholder="Segunda Dosis" />
+<br />
+<br />
+<button @onclick="buscar" class="btn btn-info btn-lg">Traer Datos</button>
+<br />
+<br />
+<button @onclick="registrar" class="btn btn-success btn-lg">Registrar Segunda Dosis</button>
+<p>
+    <center>
+        <h4>@error</h4>
+        <h4>@exito</h4>
+    </center>
+</p>
+@code {
+    string Nombre, Apellido, Cedula, SignoZodiacal, Vacuna_Recibida;
+    string exito, Primera_Dosis, Segunda_Dosis, FechaNacimiento, Provincia;
+    string error;
+    int ID;
+    SqlConnection conexion = new SqlConnection("server= localhost\\SQLEXPRESS; database = Tarea7; Integrated security = True");
+    void registrar()
+    {
+        try
+        {
+            string query = "UPDATE Personas set Segunda_Dosis = @Segunda_Dosis";
+            conexion.Open();
+            SqlCommand comando = new SqlCommand(query, conexion);
+            comando.Parameters.AddWithValue("@Segunda_Dosis", Segunda_Dosis);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            exito = "Segunda Dosis Registrada con Exito";
+        }
+        catch(Exception e)
+        {
+            error = e.Message;
+        }
+
+    }
+    void buscar()
+    {
+        try
+        {
+            string query = $"SELECT * FROM Personas WHERE Cedula = '{Cedula}'";
+            conexion.Open();
+            SqlCommand comando = new SqlCommand(query, conexion);
+            SqlDataReader lector = comando.ExecuteReader();
+            while (lector.Read())
+            {
+                ID = Convert.ToInt32(lector[0]);
+                Nombre = Convert.ToString(lector[2]);
+                Apellido = Convert.ToString(lector[3]);
+                FechaNacimiento = Convert.ToString(lector[4]);
+                SignoZodiacal = Convert.ToString(lector[5]);
+                Vacuna_Recibida = Convert.ToString(lector[6]);
+                Provincia = Convert.ToString(lector[7]);
+                Primera_Dosis = Convert.ToString(lector[8]);
+                Segunda_Dosis = Convert.ToString(lector[9]);
+
+            }
+            conexion.Close();
+        }
+        catch(Exception e)
+        {
+            error = e.Message;
+        }
+
+    }
+}

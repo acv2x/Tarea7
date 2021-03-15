@@ -1,0 +1,37 @@
+﻿@page "/Eliminar"
+@using System.Data.SqlClient;
+<h2>Eliminar Registro</h2>
+<p>
+    Inserte el Signo Zodiacal de la personas las cuales desea vizualisar
+</p>
+<input type="text" @bind-value="@cedula" placeholder="Signo Zodiacal" />
+<button @onclick="eliminar" class="btn btn-success btn-lg">Eliminar</button>
+<p>
+    <h4>@exito</h4>
+    <h4>@error</h4>
+</p>
+
+@code {
+    string cedula;
+    SqlConnection conexion = new SqlConnection("server= localhost\\SQLEXPRESS; database = Tarea7; Integrated security = True");
+    string exito;
+    string error;
+    void eliminar()
+    {
+        try
+        {
+            string query = "DELETE FROM Personas where Cedula = @cedula";
+            conexion.Open();
+            SqlCommand comando = new SqlCommand(query, conexion);
+            comando.Parameters.AddWithValue("@cedula", cedula);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            exito = "PERSONA ELIMINADA CON EXITO";
+        }
+        catch(Exception e)
+        {
+            error = e.Message;
+        }
+    }
+
+}

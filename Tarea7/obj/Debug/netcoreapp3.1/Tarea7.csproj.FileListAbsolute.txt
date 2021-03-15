@@ -67,3 +67,13 @@ C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\bin\Debug\netcoreapp
 C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\bin\Debug\netcoreapp3.1\DataAccessLibrary.dll
 C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\bin\Debug\netcoreapp3.1\Data.Dapper.pdb
 C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\bin\Debug\netcoreapp3.1\DataAccessLibrary.pdb
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Vacunados_Provincias.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\Razor\Pages\Vacunados_Provincias.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SegundaDosis.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\Razor\Pages\SegundaDosis.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Vacunados_Signo.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\Razor\Pages\Vacunados_Signo.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Vacunados_Marca.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\Razor\Pages\Vacunados_Marca.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Eliminar.razor.g.cs
+C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\obj\Debug\netcoreapp3.1\Razor\Pages\Eliminar.razor.g.cs

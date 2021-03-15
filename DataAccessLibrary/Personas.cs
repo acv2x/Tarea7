@@ -12,6 +12,10 @@ namespace DataAccessLibrary
         public string Apellido { get; set; }
         public string Fecha_Nacimiento { get; set; }
         public string Signo_Zodiacal { get; set; }
-        public int ID_Provincia { get; set; }
+        public string Vacuna_Recibida { get; set; }
+        public string Provincia { get; set; }
+
+        public string Primera_Dosis { get; set; }
+        public string Segunda_Dosis { get; set; }
     }
 }

@@ -76,35 +76,14 @@ using Tarea7.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
-using System.Data;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 2 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Eliminar.razor"
 using System.Data.SqlClient;
 
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 4 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
-using Tarea7.Interfaces;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 6 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
-using DataAccessLibrary;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/ListaVacunados")]
-    public partial class ListaVacunados : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Eliminar")]
+    public partial class Eliminar : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -112,15 +91,23 @@ using DataAccessLibrary;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\ListaVacunados.razor"
+#line 14 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Pages\Eliminar.razor"
        
+    string cedula;
+    SqlConnection conexion = new SqlConnection("server= localhost\\SQLEXPRESS; database = Tarea7; Integrated security = True");
+    string exito;
     string error;
-    private IEnumerable<Personas> personas;
-    protected override async Task OnInitializedAsync()
+    void eliminar()
     {
         try
         {
-            personas = await PersonasSercive.GetAllPersonas();
+            string query = "DELETE FROM Personas where Cedula = @cedula";
+            conexion.Open();
+            SqlCommand comando = new SqlCommand(query, conexion);
+            comando.Parameters.AddWithValue("@cedula", cedula);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            exito = "PERSONA ELIMINADA CON EXITO";
         }
         catch(Exception e)
         {
@@ -128,10 +115,10 @@ using DataAccessLibrary;
         }
     }
 
+
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPersonaService PersonasSercive { get; set; }
     }
 }
 #pragma warning restore 1591
