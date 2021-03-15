@@ -83,7 +83,7 @@ using Tarea7.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 29 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Shared\NavMenu.razor"
+#line 44 "C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\Tarea7\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
