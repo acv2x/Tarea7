@@ -695,23 +695,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abelb\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Gabriel Guerrero\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\Tarea7\\Tarea7.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel Guerrero\\Desktop\\ITLA\\6to Cuatrimestre\\Programacion 3\\Tareas\\Tarea7\\Tarea7\\Tarea7.csproj",
       "projectName": "Tarea7",
-      "projectPath": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\Tarea7\\Tarea7.csproj",
-      "packagesPath": "C:\\Users\\abelb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\Tarea7\\obj\\",
+      "projectPath": "C:\\Users\\Gabriel Guerrero\\Desktop\\ITLA\\6to Cuatrimestre\\Programacion 3\\Tareas\\Tarea7\\Tarea7\\Tarea7.csproj",
+      "packagesPath": "C:\\Users\\Gabriel Guerrero\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gabriel Guerrero\\Desktop\\ITLA\\6to Cuatrimestre\\Programacion 3\\Tareas\\Tarea7\\Tarea7\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\abelb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gabriel Guerrero\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -725,11 +721,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\Data.Dapper\\Data.Dapper.csproj": {
-              "projectPath": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\Data.Dapper\\Data.Dapper.csproj"
+            "C:\\Users\\Gabriel Guerrero\\Desktop\\ITLA\\6to Cuatrimestre\\Programacion 3\\Tareas\\Tarea7\\Data.Dapper\\Data.Dapper.csproj": {
+              "projectPath": "C:\\Users\\Gabriel Guerrero\\Desktop\\ITLA\\6to Cuatrimestre\\Programacion 3\\Tareas\\Tarea7\\Data.Dapper\\Data.Dapper.csproj"
             },
-            "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-              "projectPath": "C:\\Users\\abelb\\Desktop\\ITLA\\CUATRIMESTRES\\CUATRIMESTRE V\\I. PROGRAMACIÓN III\\MÓDULO VII - TEAMUP\\III. ACTIVIDAD II\\Tarea7\\DataAccessLibrary\\DataAccessLibrary.csproj"
+            "C:\\Users\\Gabriel Guerrero\\Desktop\\ITLA\\6to Cuatrimestre\\Programacion 3\\Tareas\\Tarea7\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+              "projectPath": "C:\\Users\\Gabriel Guerrero\\Desktop\\ITLA\\6to Cuatrimestre\\Programacion 3\\Tareas\\Tarea7\\DataAccessLibrary\\DataAccessLibrary.csproj"
             }
           }
         }
@@ -771,7 +767,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

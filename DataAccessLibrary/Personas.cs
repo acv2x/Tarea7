@@ -14,8 +14,9 @@ namespace DataAccessLibrary
         public string Signo_Zodiacal { get; set; }
         public string Vacuna_Recibida { get; set; }
         public string Provincia { get; set; }
-
         public string Primera_Dosis { get; set; }
         public string Segunda_Dosis { get; set; }
+        public string Latitud { get; set; }
+        public string Longitud { get; set; }
     }
 }

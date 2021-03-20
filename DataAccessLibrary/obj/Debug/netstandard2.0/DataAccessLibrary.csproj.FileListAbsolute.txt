@@ -7,3 +7,12 @@ C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug
 C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.dll
 C:\Users\Willy Acevedo\Desktop\Programacion_3\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.pdb
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\bin\Debug\netstandard2.0\DataAccessLibrary.deps.json
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\bin\Debug\netstandard2.0\DataAccessLibrary.dll
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\bin\Debug\netstandard2.0\DataAccessLibrary.pdb
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.csprojAssemblyReference.cache
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.AssemblyInfo.cs
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.dll
+C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\DataAccessLibrary\obj\Debug\netstandard2.0\DataAccessLibrary.pdb

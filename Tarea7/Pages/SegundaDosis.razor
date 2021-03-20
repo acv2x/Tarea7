@@ -34,6 +34,12 @@
 <input type="text" @bind-value="@Segunda_Dosis" placeholder="Segunda Dosis" />
 <br />
 <br />
+<input type="text" @bind-value="@latitud" placeholder="Latitud" />
+<br />
+<br />
+<input type="text" @bind-value="@longitud" placeholder="Longitud" />
+<br />
+<br />
 <button @onclick="buscar" class="btn btn-info btn-lg">Traer Datos</button>
 <br />
 <br />
@@ -46,10 +52,10 @@
 </p>
 @code {
     string Nombre, Apellido, Cedula, SignoZodiacal, Vacuna_Recibida;
-    string exito, Primera_Dosis, Segunda_Dosis, FechaNacimiento, Provincia;
+    string exito, Primera_Dosis, Segunda_Dosis, FechaNacimiento, Provincia, latitud, longitud;
     string error;
     int ID;
-    SqlConnection conexion = new SqlConnection("server= localhost\\SQLEXPRESS; database = Tarea7; Integrated security = True");
+    SqlConnection conexion = new SqlConnection("server= GABRIEL-PC\\SQLEXPRESS01; database = Tarea7; Integrated security = True");
     void registrar()
     {
         try
@@ -62,7 +68,7 @@
             conexion.Close();
             exito = "¡Segunda Dosis Registrada con Exito!";
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             error = e.Message;
         }
@@ -87,11 +93,13 @@
                 Provincia = Convert.ToString(lector[7]);
                 Primera_Dosis = Convert.ToString(lector[8]);
                 Segunda_Dosis = Convert.ToString(lector[9]);
+                latitud = Convert.ToString(lector[10]);
+                longitud = Convert.ToString(lector[11]);
 
             }
             conexion.Close();
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             error = e.Message;
         }

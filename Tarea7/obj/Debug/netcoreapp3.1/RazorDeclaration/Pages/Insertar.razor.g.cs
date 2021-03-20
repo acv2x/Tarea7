@@ -13,91 +13,91 @@ namespace Tarea7.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 1 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 2 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 3 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 4 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 5 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 6 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 7 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 8 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using Tarea7;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\_Imports.razor"
+#line 9 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\_Imports.razor"
 using Tarea7.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\Pages\Insertar.razor"
+#line 2 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\Pages\Insertar.razor"
 using Tarea7.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\Pages\Insertar.razor"
+#line 3 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\Pages\Insertar.razor"
 using System.Data.SqlClient;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\Pages\Insertar.razor"
+#line 4 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\Pages\Insertar.razor"
 using System.Net;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\Pages\Insertar.razor"
+#line 5 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\Pages\Insertar.razor"
 using Newtonsoft.Json;
 
 #line default
@@ -112,21 +112,22 @@ using Newtonsoft.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 51 "C:\Users\abelb\Desktop\ITLA\CUATRIMESTRES\CUATRIMESTRE V\I. PROGRAMACIÓN III\MÓDULO VII - TEAMUP\III. ACTIVIDAD II\Tarea7\Tarea7\Pages\Insertar.razor"
+#line 58 "C:\Users\Gabriel Guerrero\Desktop\ITLA\6to Cuatrimestre\Programacion 3\Tareas\Tarea7\Tarea7\Pages\Insertar.razor"
        
     string Nombre, Apellido, Cedula, SignoZodiacal, Vacuna_Recibida;
-    string exito, Primera_Dosis, Segunda_Dosis;
+    string exito, Primera_Dosis, Segunda_Dosis, latitud, longitud;
     DateTime FechaNacimiento;
     string error;
 
     string provincia;
-    SqlConnection conexion = new SqlConnection("server= localhost\\SQLEXPRESS; database = Tarea7; Integrated security = True");
+    SqlConnection conexion = new SqlConnection("server= GABRIEL-PC\\SQLEXPRESS01; database = Tarea7; Integrated security = True");
 
     void RegistrarVacunado()
     {
         try
         {
-            string query = "INSERT into Personas(Cedula, Nombre, Apellido, Fecha_Nacimiento, Signo_Zodiacal, Vacuna_Recibida, Provincia, Primera_Dosis) values (@Cedula, @Nombre, @Apellido, @Fecha_Nacimiento, @Signo_Zodiacal, @Vacuna_Recibida, @Provincia, @Primera_Dosis)";
+            string query = "INSERT INTO Personas(Cedula, Nombre, Apellido, Fecha_Nacimiento, Signo_Zodiacal, Vacuna_Recibida, Provincia, Primera_Dosis, Latitud, Longitud) " +
+                    "values (@Cedula, @Nombre, @Apellido, @Fecha_Nacimiento, @Signo_Zodiacal, @Vacuna_Recibida, @Provincia, @Primera_Dosis, @Latitud, @Longitud)";
             conexion.Open();
             SqlCommand comando = new SqlCommand(query, conexion);
             comando.Parameters.AddWithValue("@Cedula", Cedula);
@@ -137,14 +138,13 @@ using Newtonsoft.Json;
             comando.Parameters.AddWithValue("@Vacuna_Recibida", Vacuna_Recibida);
             comando.Parameters.AddWithValue("@Provincia", provincia);
             comando.Parameters.AddWithValue("@Primera_Dosis", Primera_Dosis);
+            comando.Parameters.AddWithValue("@Latitud", latitud);
+            comando.Parameters.AddWithValue("@Longitud", longitud);
 
             comando.ExecuteNonQuery();
 
-
-
-
             conexion.Close();
-            exito = "Persona Registrada con Exito!!";
+            exito = "¡¡Persona Registrada con Exito!!";
         }
         catch (Exception e)
         {
@@ -153,7 +153,7 @@ using Newtonsoft.Json;
 
 
     }
-    
+
     void ValidarCedula()
     {
         try
