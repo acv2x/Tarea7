@@ -1,11 +1,6 @@
 ﻿@page "/Mapa"
 @namespace Tarea7.Pages
-@using Tarea7.Interfaces;
-@inject IPersonaService PersonasSercive
-@using DataAccessLibrary;
 
-
-<style></style>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,27 +8,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />
 </head>
-<body>
-    <input class="btn btn-primary btn-lg float-left" type="button" onclick="history.back()" name="volver" value="Regresar">
-    <center>
-        <h1>Mapa</h1>
-        <div id="mapid"> </div>
-        <br>
-        <div></div>
-        <br>
-    </center>
+<body>  
+    <div id="mapid"> </div>
 
     <script>
-        //PARA AGREGAR LA UBICACION DEL MAPA
-        var mymap = L.map('mapid').setView([18.48847, -69.85707], 13);
+        //PARA AGREGAR LA UBICACION INICIAL DEL MAPA
+        var mymap = L.map('mapid').setView([18.47186, -69.89232], 8);
 
+        //PARA AGREGAR EL MAPA
         L.tileLayer('http://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             maxZoom: 18,
             id: 'mapbox/streets-v11',
             tileSize: 512,
@@ -43,9 +32,8 @@
 
         //PARA AGREGAR EL MARCADOR
         var marker = L.marker([18.48847, -69.85707]).addTo(mymap);
-        //var marker = L.marker([51.5, -0.09]).addTo(mymap);
 
-        //PARA AGREGAR LOS DATOS
+        //PARA AGREGAR LOS DATOS AL MARCADOR
         marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
     </script>
 </body>

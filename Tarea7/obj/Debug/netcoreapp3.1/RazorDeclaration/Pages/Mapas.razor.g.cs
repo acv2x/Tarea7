@@ -75,7 +75,7 @@ using Tarea7.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class Mapa : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Mapas : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
